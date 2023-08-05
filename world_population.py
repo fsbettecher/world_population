@@ -36,5 +36,8 @@ dataset = pd.melt(dataset, id_vars=['codigo_pais', 'nome_pais', 'area', 'densida
                                     value_vars=['2022', '2020', '2015', '2010', '2000', '1990', '1980', '1970'],
                                     var_name='ano', value_name='populacao')
 
+# Ordenando os dados de acordo com a ordem crescente do nome do país e ano
+dataset.sort_values(['nome_pais', 'ano'], inplace=True)
+
 # Gerando um arquivo csv com o DataFrame tratado
 dataset.to_csv('./portfolio/Populacao_mundial.csv')
