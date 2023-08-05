@@ -18,10 +18,10 @@ O caminho do dataset é todo o domínio após https://www.kaggle.com/datasets/
 
 dataset_path = 'whenamancodes/world-population-live-dataset'
 
-kaggle.api.dataset_download_files(dataset_path, path='./portfolio/', unzip=True)
+#kaggle.api.dataset_download_files(dataset_path, path='./portfolio/', unzip=True)
 
 # Criando um DataFrame a partir do arquivo baixado
-dataset = pd.read_csv('./portfolio/World Population Live Dataset.csv')
+dataset = pd.read_csv('./world_population/World Population Live Dataset.csv')
 
 # Renomeando as colunas do DataFrame
 dataset.rename(columns={'CCA3': 'codigo_pais', 'Name': 'nome_pais',
@@ -41,4 +41,4 @@ dataset = pd.melt(dataset, id_vars=['codigo_pais', 'nome_pais', 'area', 'densida
 dataset.sort_values(['nome_pais', 'ano'], inplace=True)
 
 # Gerando um arquivo csv com o DataFrame tratado
-dataset.to_csv('./portfolio/Populacao_mundial.csv')
+dataset.to_csv('./world_population/Populacao_mundial.csv')
