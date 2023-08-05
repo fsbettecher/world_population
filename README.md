@@ -28,14 +28,27 @@ uma informação por país e ano, ou seja, é possível utilizar os dados para u
 
 • Seguindo os passos acima, será feito o download do token no formato json para o seu computador.
 
-• Em seguida, abra o Git Bash e execute o comando abaixo:
+• Em seguida, abra o Git Bash e execute as linhas de comando abaixo:
 
 ```
 cd C:/users/nome_do_usuario
+```
+
+>Altere "<strong>nome_do_usuario</strong>" para o nome que está registrado em seu computador
+<br>
+
+```
 mkdir .kaggle
+```
+```
 cd .kaggle
+```
+```
 cp diretorio/onde/está/o/arquivo/kaggle.json .
 ```
+>Essa última linha deve conter o final "<strong>/kaggle.json</strong>" no endereço, para que seja feita uma cópia do arquivo correto na pasta atual representada por "."
+>
+>Por exemplo: no meu computador o comando seria `cp D:/Downloads/kaggle.json .`
 <br>
 
 • Dessa forma, o arquivo token baixado será copiado para a pasta .kaggle criada na pasta do usuário. Essa etapa é importante para a autenticação da API no código e não deve ser pulada.
