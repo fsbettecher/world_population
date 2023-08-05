@@ -38,6 +38,6 @@ cp diretorio/onde/está/o/arquivo/kaggle.json .
 ```
 <br>
 
-• Dessa forma, o arquivo token baixado será copiado para a pasta .kaggle na pasta do usuário. Essa etapa é importante para a autenticação da API no código.
+• Dessa forma, o arquivo token baixado será copiado para a pasta .kaggle criada na pasta do usuário. Essa etapa é importante para a autenticação da API no código e não deve ser pulada.
 
-<h2>🎉 Pronto! Agora você está pronto para rodar o código e utilizar a API do Kaggle! 🎉</h2>
+<h2>🎉 Pronto! Agora sua configuração está preparada para rodar o código e utilizar a API do Kaggle! 🎉</h2>
