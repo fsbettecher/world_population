@@ -2,7 +2,6 @@
 <p align="center">
 <img loading="lazy" src="https://img.shields.io/badge/STATUS-FINALIZADO-badge"/>
 </p>
-<br>
 
 <hr></hr>
 
