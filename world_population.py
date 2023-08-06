@@ -6,7 +6,6 @@ import kaggle
 kaggle.api.authenticate()
 
 # Baixando os dados do dataset que será utilizado
-
 """
 O caminho para o arquivo é encontrado na URL da página do dataset
 
